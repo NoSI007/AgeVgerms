@@ -1,0 +1,28 @@
+﻿<!--
+// (c) Khaled A Alwan.
+// All other rights reserved.
+-->
+<Window x:Class="germsVage.Query"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:germsVage"
+        mc:Ignorable="d"
+        Title="Query" Height="300" Width="300">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="69*"/>
+            <ColumnDefinition Width="77*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="68*"/>
+            <RowDefinition Height="41*"/>
+            <RowDefinition Height="43*"/>
+            <RowDefinition Height="117*"/>
+        </Grid.RowDefinitions>
+        <TextBlock Text="germ ratio" Grid.Row="1"/>
+        <TextBox Name="zgr" Grid.Column="1" Grid.Row="1" Background="LightYellow"/>
+        <Button Content="Calc" Name="Calc" Grid.Row="2" Grid.ColumnSpan="2" HorizontalAlignment="Center"  Click="Calc_Click"/>
+    </Grid>
+</Window>
