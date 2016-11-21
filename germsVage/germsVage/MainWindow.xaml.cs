@@ -83,11 +83,7 @@ namespace germsVage
             Clipboard.SetText(str.ToString());
         }
 
-        private void query_Click(object sender, RoutedEventArgs e)
-        {
-            Query nf = new Query();
-            nf.ShowDialog();
-        }
+
         
         private void zGo_Click(object sender, RoutedEventArgs e)
         {
